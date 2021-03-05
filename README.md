@@ -15,11 +15,11 @@ CMD ["nginx", "-g", "daemon off;"]
 ```docker-compose
 version: '3.1'
 
-service:
+services:
 
-	frontend:
-		build: .
-		restart: always
-		ports:
-			- 4200:80
+  frontend:
+    build: .
+    restart: always
+    ports:
+     - '4200:8099'
 ```
